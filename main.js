@@ -26,8 +26,8 @@ setTimeout(() => {
                 z-index: 999999999999;
                 border-radius: 8px;
                 overflow: hidden;
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-                background-color: #ffffff;
+                box-shadow:18px rgba(219, 0, 243, 0.45);
+                background-color:rgb(221, 159, 247);
                 opacity: 0;
                 transition: opacity 0.3s ease, transform 0.3s ease;
                 top: 50%;
@@ -62,7 +62,7 @@ setTimeout(() => {
             bar.style.cssText = `
                 width: 100%;
                 height: 40px;
-                background-color: #4CAF50;
+                background-color:rgb(255, 0, 0);
                 position: relative;
                 border-top-left-radius: 8px;
                 border-top-right-radius: 8px;
@@ -71,6 +71,7 @@ setTimeout(() => {
                 margin: 0px 0px;
                 padding: 0px 0px;
                 border-radius: 0;
+                color:white;
             `;
 
             const closeButton = document.createElement("button");
