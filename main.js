@@ -47,7 +47,7 @@ setTimeout(() => {
                 color: #fff; /* White text for readability */
             `;
 
-            fetch("https://raw.githubusercontent.com/Vidyy-d2/uBlobeBM/refs/heads/main/main.html")
+            fetch("https://raw.githubusercontent.com/Blobby-Boi/uBlobeBM/refs/heads/main/main.html")
                 .then(response => response.text())
                 .then(html => {
                     const uBlobeHtml = blobFrame.contentDocument || blobFrame.contentWindow.document;
