@@ -22,8 +22,8 @@ setTimeout(() => {
                 z-index: 999999999999;
                 border-radius: 8px;
                 overflow: hidden;
-                box-shadow: 18px rgba(0, 255, 255, 0.45);
-                background-color: #1d1f29; /* Dark background */
+                box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8); /* Neon cyan glow */
+                background-color: #121212; /* Dark background */
                 opacity: 0;
                 transition: opacity 0.3s ease, transform 0.3s ease;
                 top: 50%;
@@ -43,7 +43,8 @@ setTimeout(() => {
                 top: 40px;
                 display: block;
                 user-select: none;
-                background-color: #12141f; /* Dark iframe background */
+                background-color: #1d1d1d; /* Dark grey background for the iframe */
+                color: #fff; /* White text for readability */
             `;
 
             fetch("https://raw.githubusercontent.com/Blobby-Boi/uBlobeBM/refs/heads/main/main.html")
@@ -59,7 +60,7 @@ setTimeout(() => {
             bar.style.cssText = `
                 width: 100%;
                 height: 40px;
-                background-color: #252b38; /* Dark grayish blue */
+                background-color: #333333; /* Darker bar for the theme */
                 position: relative;
                 border-top-left-radius: 8px;
                 border-top-right-radius: 8px;
@@ -67,9 +68,8 @@ setTimeout(() => {
                 cursor: move;
                 margin: 0px 0px;
                 padding: 0px 0px;
-                border-radius: 0;
-                color: #00f7ff; /* Neon blue text */
-                box-shadow: 0 4px 10px rgba(0, 255, 255, 0.5); /* Glowing effect */
+                color: #ff33cc; /* Neon pink title text */
+                box-shadow: 0px 4px 20px rgba(255, 51, 204, 0.8); /* Neon glow */
             `;
 
             const closeButton = document.createElement("button");
@@ -87,15 +87,15 @@ setTimeout(() => {
                 border: none;
                 font-size: 20px;
                 font-family: 'Varela Round', sans-serif;
-                color: #00ff00; /* Neon green close button */
+                color: #ff00ff; /* Neon purple close button */
                 cursor: pointer;
                 transition: color 0.3s ease;
             `;
             closeButton.addEventListener("mouseenter", function() {
-                closeButton.style.color = "#00ff99"; /* Glowing green on hover */
+                closeButton.style.color = "#00ff00"; /* Glowing green on hover */
             });
             closeButton.addEventListener("mouseleave", function() {
-                closeButton.style.color = "#00ff00"; /* Neon green when not hovering */
+                closeButton.style.color = "#ff00ff"; /* Neon purple when not hovering */
             });
             closeButton.addEventListener("click", closeIframe);
 
@@ -106,12 +106,10 @@ setTimeout(() => {
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                color: #00f7ff;
+                color: #ff33cc; /* Neon pink title text */
                 font-size: 16px;
                 font-family: 'Varela Round', sans-serif;
                 user-select: none;
-                margin: 0px 0px;
-                padding: 0px 0px;
                 background-color: transparent;
                 text-align: center;
             `;
